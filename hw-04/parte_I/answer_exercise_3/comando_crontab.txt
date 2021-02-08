@@ -1,0 +1,12 @@
+exercise 3
+
+Para que se ejecute nuestro script backups_s.sh periodicamente como indica el enunciado
+debemos ingresar al crontab con el siguiente comando.
+
+  - $ crontab -e
+
+Una vez dentro del crontab ingresamos nuesta configuración de la siguiente manera
+
+   59 23 * * * /backups_s.sh
+
+Nos indica que se ejecutará a la hora de las 23:59 cada día, todos los meses del año.  

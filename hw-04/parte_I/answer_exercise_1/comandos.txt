@@ -1,0 +1,4 @@
+
+sudo awk 'NF { print $1 }' nginx_logs_examples.log | sort -nr | uniq -c | sort -nr | awk '{printf "%s -> %d\n", $2,$1 }' > nginx_requests_total.txt
+
+
