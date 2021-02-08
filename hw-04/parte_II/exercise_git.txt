@@ -25,6 +25,6 @@
 
 6. Modificamos el mensaje del commit anterior
     
-  - sudo git commit -m "Modified demo2.txt" --amend
+  - sudo git commit --amend -m "Modified demo2.txt"
 
 7. 
