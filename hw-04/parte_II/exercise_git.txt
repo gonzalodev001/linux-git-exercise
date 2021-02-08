@@ -8,7 +8,7 @@
     sudo vim .gitignore
   y le añadimos la regla *.sh cualquier letra que este por delante pero que termine con .sh
 
-3. Creamos dos ficheros y añadimos al stage are
+3. Creamos dos ficheros y añadimos al stage area
 
   - sudo touch  demo1.txt demo2.txt
     git add . 
@@ -27,4 +27,23 @@
     
   - sudo git commit --amend -m "Modified demo2.txt"
 
-7. 
+7. Creamos otra rama develop
+
+  - sudo git branch develop
+  Cambiamos de rama con el siguiente comando
+    sudo checkout develop
+  Creamos un script.sh y lo modificamos
+    sudo touch script.sh
+    sudo vim script.sh
+  Después lo agreamos al stage area y hacemos el commit
+    sudo git add .
+    sudo git commit -m "Commit en la rama develop"
+9. Realizamos el merge, primero debemos pasarnos a la rama master
+
+  - sudo git checkout main 
+  Luego hacemos el merge de la rama develop
+    sudo git merge develop 
+
+10. Y subimos a github
+	
+  - sudo git push
