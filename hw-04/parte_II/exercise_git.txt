@@ -1,0 +1,30 @@
+1. Creamos el proyecto e inicializamos git 
+  
+  - git init
+
+2. Añadimos la regla para ignorar ficheros .sh
+
+  - sudo touch .gitignore
+    sudo vim .gitignore
+  y le añadimos la regla *.sh cualquier letra que este por delante pero que termine con .sh
+
+3. Creamos dos ficheros y añadimos al stage are
+
+  - sudo touch  demo1.txt demo2.txt
+    git add . 
+
+4. Añadimos contenido al fichero demo1 y realizamos el commit
+
+  - sudo vim  demo1.txt 
+    sudo git commit -m "Modified demo1.txt"
+
+5. Añadimos contenido al fichero demo2 y realizamos el commit
+ 
+  - vim demo2.txt
+    sudo git commit -m "Modified demo3.txt"
+
+6. Modificamos el mensaje del commit anterior
+    
+  - sudo git commit -m "Modified demo2.txt" --amend
+
+7. 
